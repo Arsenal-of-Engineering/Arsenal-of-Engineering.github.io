@@ -25,6 +25,15 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.header-home {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
 header img {
   max-width: 100px;
   height: auto;
@@ -48,6 +57,57 @@ header p {
   font-size: 1em;
   font-weight: 300;
   opacity: 0.95;
+}
+
+.header-links {
+  margin-left: auto;
+  align-self: flex-start;
+  text-align: right;
+}
+
+.header-links p a {
+  color: white;
+  font-weight: 600;
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+}
+
+.social-icon:hover,
+.social-icon:focus-visible {
+  background: #800020;
+}
+
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.facebook {
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.x-icon {
+  font-family: Arial, sans-serif;
+  font-size: 19px;
 }
 
 main {
@@ -178,8 +238,16 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  .header-home {
+    gap: 15px;
+  }
+
   header h1 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   main h2 {
@@ -187,7 +255,11 @@ footer p {
   }
 
   header img {
-    max-width: 120px;
+    max-width: 80px;
+  }
+
+  .header-links {
+    width: 100%;
   }
 
   .sections {
