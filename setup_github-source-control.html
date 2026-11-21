@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Github Source Control | Arsenal of Engineering</title>
+  <link rel="icon" type="image/png" href="assets/images/icons/Icon.png">
+  <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body>
+  <header onclick="window.location='index.html'" style="cursor: pointer;">
+    <img src="assets/images/logo/Logo.png" alt="Arsenal of Engineering Logo">
+    <div class="header-text">
+      <h1>Arsenal of Engineering</h1>
+      <p>Developer resources for FRC Team 6223</p>
+    </div>
+  </header>
+  <main>
+    <h2>Github Source Control</h2>
+    <article class="page-content">
+      <h3>Overview</h3>
+      <p>
+        When we edit code, we save versions as we go though special software. This is called source control software
+        (source means source code). The most common source control software today is called Git.
+      </p>
+      <p>
+        When multiple people want to edit the same code, we can not longer just store it on our local machine. There are
+        online providers that host Git. You can publish your code for anyone to look at and contribute to. The most
+        popular service is called GitHub and it is free for non-commercial use.
+      </p>
+      <h3>Create an Account</h3>
+      <p>
+        Go to <a href="https://github.com/" target="_blank">https://github.com/</a> and sign up for an account.
+      </p>
+      <p>
+        When choosing a username, pick something <b>professional</b>. People have there GitHub accounts for many years
+        and even decades. You can always create another account, but it is better to just pick a username you can live
+        with in the beginning. Every code change you make will be stamped with this user name.
+      </p>
+      <h3>How to Use</h3>
+      <p>
+        There are plenty of resoruces online, like <a href="https://github.com/git-guides"
+          target="_blank">https://github.com/git-guides</a>.
+      </p>
+      <p>
+        Here are some basics though:
+      <ul>
+        <li> Let's assume that a project already exists (online in GitHub)</li>
+        <li> First, you <b>clone</b> the repository to your local machine.</li>
+        <li> Then, you open it up in your editor.</li>
+        <li> You could just start editing code, but normally we create a <b>branch</b>. This allows many people to make
+          independent changes and then safely merge them into the main branch without breaking everything.</li>
+        <li> When are done editing and testing your code locally, you save a version in Git by issuing a <b>commit</b>.
+          You
+          can commit as many times as you want while working on a feature.</li>
+        <li> When you ready to let others look at it, you <b>push</b> your local changes to the remote server (GitHub).
+        </li>
+        <li> To tell others to look at it, you create a <b>pull request</b>. You want them to pull your changes into the
+          main branch.</li>
+        <li> But we don't just do that without looking at it. Others review your code, ask questions, and make
+          suggestions.
+          This is what gets us to a higher quality codebase.</li>
+        <li> From all those comments, you will likely edit your code, <b>commit</b>, <b>push</b>, and repeat the
+          process.</li>
+        <li>When all items are resolved, the repository maintainer will <b>merge</b> into the main branch.</li>
+        <li>The maintainer will usually delete your branch on GitHub, and you may need to delete the branch on your
+          local machine.</li>
+        <li>When you are done with your project, you can just delete the local copy (but many will leave it).</li>
+      </ul>
+      Whew! That sounds like a lot, but it becomes second-nature after awhile.
+      </p>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2026 FRC Team 6223 | Arsenal of Engineering</p>
+  </footer>
+</body>
+
+</html>
